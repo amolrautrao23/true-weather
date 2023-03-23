@@ -1,0 +1,257 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  
+  font-family: 'Oswald', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+}
+body
+{
+  background-color: black;
+}
+.wrapper
+{
+  height: 90vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  overflow: hidden;
+}
+.search
+{
+  text-align: center;
+}
+.search input,.search button
+{
+  height: 2rem;
+  width: 20rem;
+  margin: .5rem 0;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  box-shadow: 2px 2px 5px green;
+  background-color: transparent;
+}
+.search h2
+{
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.search input
+{
+  padding: 0 10px;
+  color: black;
+  color: white;
+  
+}
+.search input:focus
+{
+  box-shadow: 0px 0px 10px green;
+  
+}
+.search button
+{
+ background-color: #0157d4;
+ box-shadow: none;
+ cursor: pointer;
+}
+.search button:hover
+{
+  background-color: transparent;
+  color: #0157d4;
+  border: 1px solid #0157d4;
+}
+.box
+{
+  width: 30rem;
+  height: 18rem;
+  background-color: rgba(3, 81, 55, 0.26);
+  box-shadow: 5px 5px 5px rgb(59, 244, 182) ;
+  border-radius: 5%;
+  padding: 1rem;
+  position: relative;
+ 
+}
+.box-inner
+{
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+}
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&family=Roboto:ital,wght@1,100&display=swap');
+.min-max
+{
+  font-size: 1.1rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 9rem;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  vertical-align:bottom;
+}
+.min
+{
+ height: 100%;
+ margin-bottom: -2px;
+}
+.weather-info
+{
+  padding: 0;  
+}
+.weather-info .city
+{
+  font-size: 3rem;
+}
+.day
+{
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+
+.icon-container
+{
+  position: absolute !important;
+  right: 5%;
+  font-size: 6rem;
+  bottom: 10% ;}
+.icon svg
+{
+  /* background-color: red; */
+  margin-bottom: -12px;
+  margin-right: 15px;
+}
+.cur-weather::after
+{
+ content: "o";
+ font-size: 2.1rem;
+ font-weight: bold;
+ position: absolute;
+ right: -5%;
+}
+.w-title
+{
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  line-height: 0;
+  text-align: center;
+  margin-top: 5px;
+}
+
+
+/* no data found */
+.error
+{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+/* responsive media query */
+@media (max-width:520px) {
+  .wrapper
+  {
+    align-content: space-evenly;
+  }
+  .search h2
+{
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+.search input,.search button
+{
+  height: 1.5rem;
+  width: 15rem;
+  margin: .5rem 0;
+  border-radius: 5px;
+  font-size: .8rem;
+  box-shadow: 1px 1px 6px green;
+}
+.box
+{
+  width: 20rem;
+  height: 12rem;
+  /* box-shadow: 2px 2px 25px rgba(10, 235, 160, 0.681) ; */
+  
+  box-shadow: 3px 3px 3px rgb(59, 244, 182) ;
+  border-radius: 5%;
+  padding: 1rem;
+  position: relative;
+ 
+}
+.box-inner
+{
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.min-max
+{
+  font-size: .7rem;
+  height: 2rem;
+   width: 5rem;
+}
+.min
+{
+ height: 100%;
+ margin-bottom: -2px;
+}
+.weather-info
+{
+  padding: 0;  
+}
+.weather-info .city
+{
+  font-size: 2rem;
+}
+.day
+{
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+.icon-container
+{
+  position: absolute !important;
+  right: 5%;
+  font-size: 3rem;
+  bottom: 20% ;
+}
+.icon
+{
+  margin-top: -10px;
+}
+.cur-weather::after
+{
+ content: "o";
+ font-size: 1.5rem;
+ right: -7%;
+ top: -5px;
+}
+.w-title
+{
+  font-size: 1rem;
+}
+
+
+/* no data found */
+.error
+{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+} 
