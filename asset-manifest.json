@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/true-weather/static/css/main.13b8dd36.css",
+    "main.js": "/true-weather/static/js/main.6fd9188c.js",
+    "static/js/787.d084fccb.chunk.js": "/true-weather/static/js/787.d084fccb.chunk.js",
+    "static/media/not-found.svg": "/true-weather/static/media/not-found.8fad2d95b9e345ad978c30eb2e4c0e28.svg",
+    "index.html": "/true-weather/index.html",
+    "main.13b8dd36.css.map": "/true-weather/static/css/main.13b8dd36.css.map",
+    "main.6fd9188c.js.map": "/true-weather/static/js/main.6fd9188c.js.map",
+    "787.d084fccb.chunk.js.map": "/true-weather/static/js/787.d084fccb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.13b8dd36.css",
+    "static/js/main.6fd9188c.js"
+  ]
+}
